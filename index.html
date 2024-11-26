@@ -1,58 +1,62 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
+   
        <title>Thompas burgarhak</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" href="public/css/webpage.css">
+       <link rel="stylesheet" href="public/css/style.css">
    </head>
    <body>
-        <header>
+        <header class="main-header">
             <h1>Välkommen till Thompas burgarhak</h1>
         </header>
-        <nav> <h2>Meny</h2> </nav>
-        här väljer du hamburgare
+        <nav> <h2>Meny</h2> 
+        <p class="beskrivning">Här väljer du hamburgare</p>
+         </nav>
    <main>
-      <section>
+      <section class="burgardelen">
         <div style="display: inline-block">
          <header><h3>Pippi-burgare</h3></header>
-         <img src="https://www.thespicedchickpea.com/media/1863/img_2137.jpg" alt="En krispig kycklinburgare i sesambröd med sallad, picklad rödlök, ost och pickles." title="Chicken Delight" style="width: 200px">
+         <img src="https://www.thespicedchickpea.com/media/1863/img_2137.jpg" alt="En krispig kycklinburgare i sesambröd med sallad, picklad rödlök, ost och pickles." title="Pippi-burgare" style="width: 180px">
         <ul>
-                <li>pankofriterad kyckling</li>
-                <li>sesambröd</li>
-                <li>picklad rödlök</li>
-                <li>romansallad</li>
-                <li>dillpickles</li>
-                <li>cheddar</li>
+                <li>Pankopanerad kyckling</li>
+                <li>Sesambröd</li>
+                <li>Picklad rödlök</li>
+                <li>Romansallad</li>
+                <li>Dillpickles</li>
+                <li>Cheddar</li>
         </ul>
         <section style="font-size: 10px;">
          <dl>
                 <dt>Allergener:</dt>
-                <dd>Gluten, lök, senapsfrö, laktos, sesam</dd>
+                <dd class="allergen">Gluten, lök, senapsfrö, laktos, sesam</dd>
          </dl>
         </section>
         </div>
 
         <div style="display: inline-block">
             <header><h3>Gedigen Burgare</h3></header>
-            <img src="https://www.lantmannenunibake.dk/siteassets/sweden/images/03.-inspiration/recept/receptbilder-teasers/600x400/600x400_recept_burger_bun_grande_dubbel_orebro.jpg?maxwidth=600&maxheight=600" alt="Dubbel hamburgare i brioche, romansallad, cheddar, jalapeno, picklad rödlök" title="Gedigen Burgare" style="width: 200px">
+            <img src="https://www.lantmannenunibake.dk/siteassets/sweden/images/03.-inspiration/recept/receptbilder-teasers/600x400/600x400_recept_burger_bun_grande_dubbel_orebro.jpg?maxwidth=600&maxheight=600" alt="Dubbel hamburgare i brioche, romansallad, cheddar, jalapeno, picklad rödlök" title="Gedigen Burgare" style="width: 300px">
            <ul>
                    <li>Dubbla biffar</li>
                    <li>Brioche</li>
-                   <li>picklad rödlök</li>
-                   <li>romansallad</li>
-                   <li>jalapenos</li>
-                   <li>cheddar</li>
+                   <li>Picklad rödlök</li>
+                   <li>Romansallad</li>
+                   <li>Jalapenos</li>
+                   <li>Cheddar</li>
            </ul>
            <section style="font-size: 10px;">
             <dl>
                    <dt>Allergener:</dt>
-                   <dd>Gluten, lök, laktos, chili</dd>
+                   <dd class="allergen">Gluten, lök, laktos, chili</dd>
             </dl>
            </section>
         </div>
 
         <div style="display: inline-block">
             <header><h3>Knappt En Burgare</h3></header>
-            <img src="https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750,f_auto/f_auto/healthiest-fast-food-burgers-phpW60uHJ" alt="burgare, ketchup & bröd" title="Knappt En Burgare" style="width: 200px">
+            <img src="https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750,f_auto/f_auto/healthiest-fast-food-burgers-phpW60uHJ" alt="burgare, ketchup & bröd" title="Knappt En Burgare" style="width: 300px">
            <ul>
                    <li>Kött</li>
                    <li>Bröd</li>
@@ -61,13 +65,13 @@
            <section style="font-size: 10px;">
             <dl>
                    <dt>Allergener:</dt>
-                   <dd>Gluten, lök, tomat</dd>
+                   <dd class="allergen">Gluten, lök, tomat</dd>
             </dl>
            </section>
         </div>
       </section>
 
-      <section>
+      <section class="kundinformation">
          <header><h3>Kundinformation</h3></header>
          <form action="/submit" method="post">
             <label for="name">Namn:</label>
@@ -95,6 +99,7 @@
                 <option value="card">Kort</option>
                 <option value="cash">Kontant</option>
                 <option value="swish">Swish</option>
+                <option value="klarna">Klarna</option>
             </select><br><br>
 
             <button type="submit" style="display: flex; align-items: center;">
