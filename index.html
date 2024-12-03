@@ -1,117 +1,13 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-   
-       <title>Thompas burgarhak</title>
-       <meta charset="utf-8"/>
-       <link rel="stylesheet" href="public/css/webpage.css">
-       <link rel="stylesheet" href="public/css/style.css">
-   </head>
-   <body>
-        <header class="main-header">
-            <h1>Välkommen till Thompas burgarhak</h1>
-        </header>
-        <nav> <h2>Meny</h2> 
-        <p class="beskrivning">Här väljer du hamburgare</p>
-         </nav>
-   <main>
-      <section class="burgardelen">
-        <div style="display: inline-block">
-         <header><h3>Pippi-burgare</h3></header>
-         <img src="https://www.thespicedchickpea.com/media/1863/img_2137.jpg" alt="En krispig kycklinburgare i sesambröd med sallad, picklad rödlök, ost och pickles." title="Pippi-burgare" style="width: 180px">
-        <ul>
-                <li>Pankopanerad kyckling</li>
-                <li>Sesambröd</li>
-                <li>Picklad rödlök</li>
-                <li>Romansallad</li>
-                <li>Dillpickles</li>
-                <li>Cheddar</li>
-        </ul>
-        <section style="font-size: 10px;">
-         <dl>
-                <dt>Allergener:</dt>
-                <dd class="allergen">Gluten, lök, senapsfrö, laktos, sesam</dd>
-         </dl>
-        </section>
-        </div>
-
-        <div style="display: inline-block">
-            <header><h3>Gedigen Burgare</h3></header>
-            <img src="https://www.lantmannenunibake.dk/siteassets/sweden/images/03.-inspiration/recept/receptbilder-teasers/600x400/600x400_recept_burger_bun_grande_dubbel_orebro.jpg?maxwidth=600&maxheight=600" alt="Dubbel hamburgare i brioche, romansallad, cheddar, jalapeno, picklad rödlök" title="Gedigen Burgare" style="width: 300px">
-           <ul>
-                   <li>Dubbla biffar</li>
-                   <li>Brioche</li>
-                   <li>Picklad rödlök</li>
-                   <li>Romansallad</li>
-                   <li>Jalapenos</li>
-                   <li>Cheddar</li>
-           </ul>
-           <section style="font-size: 10px;">
-            <dl>
-                   <dt>Allergener:</dt>
-                   <dd class="allergen">Gluten, lök, laktos, chili</dd>
-            </dl>
-           </section>
-        </div>
-
-        <div style="display: inline-block">
-            <header><h3>Knappt En Burgare</h3></header>
-            <img src="https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750,f_auto/f_auto/healthiest-fast-food-burgers-phpW60uHJ" alt="burgare, ketchup & bröd" title="Knappt En Burgare" style="width: 300px">
-           <ul>
-                   <li>Kött</li>
-                   <li>Bröd</li>
-                   <li>Ketchup</li>
-           </ul>
-           <section style="font-size: 10px;">
-            <dl>
-                   <dt>Allergener:</dt>
-                   <dd class="allergen">Gluten, lök, tomat</dd>
-            </dl>
-           </section>
-        </div>
-      </section>
-
-      <section class="kundinformation">
-         <header><h3>Kundinformation</h3></header>
-         <form action="/submit" method="post">
-            <label for="name">Namn:</label>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">E-post:</label>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="street">Gata:</label>
-            <input type="text" id="street" name="street" required><br><br>
-
-            <label for="housenumber">Husnummer:</label>
-            <input type="number" id="housenumber" name="housenumber" required><br><br>
-
-            <label>Kön:</label><br>
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Man</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Kvinna</label><br>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Annat</label><br><br>
-
-            <label for="payment">Betalningsmetod:</label>
-            <select id="payment" name="payment" required>
-                <option value="card">Kort</option>
-                <option value="cash">Kontant</option>
-                <option value="swish">Swish</option>
-                <option value="klarna">Klarna</option>
-            </select><br><br>
-
-            <button type="submit" style="display: flex; align-items: center;">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZTKeKwIXlmrkXB756eRHrBRZKQfGebPgh7w&s" alt="Beställ-knapp" style="width: 20px; margin-right: 5px;">
-                <span>Beställ</span>
-            </button>
-         </form>
-      </section>
-   </main>
-   <hr>
-   <footer>
-      &copy; Thomas Ventures
-   </footer>
-   </body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

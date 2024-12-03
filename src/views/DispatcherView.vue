@@ -2,13 +2,24 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          #{{ key }}:
+<ul>
+  <li v-for="(item, index) in order.orderItems" :key="index">
+  {{ item[0] }}: {{ item[1] }}
+</li>
+</ul>
+          <h4>Order #{{ key }}</h4>
+        <p><strong>Kund:</strong> {{ order.customerInfo.name }}</p>
+        <p><strong>E-post:</strong> {{ order.customerInfo.email }}</p>
+        <p><strong>Kön:</strong> {{ order.customerInfo.gender }}</p>
+        <p><strong>Betalning:</strong> {{ order.customerInfo.payment }}</p>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
       <div id="dots">
-          <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
-            {{ key }}
+          <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key"
+          class="dot">
+          📍
           </div>
       </div>
     </div>
@@ -22,11 +33,13 @@
     data: function () {
       return {
         orders: null,
-      }
+      };
     },
     created: function () {
-      socket.on('currentQueue', data =>
-        this.orders = data.orders);
+      socket.on('currentQueue', (data) => {
+        this.orders = data.orders;
+        console.log("Mottagna ordrar:", this.orders);
+      });
     },
     methods: {
       clearQueue: function () {

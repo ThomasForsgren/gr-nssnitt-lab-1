@@ -1,21 +1,39 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Pippi-Burgare",
+    "kCal": 300,
+    "url": "https://www.thespicedchickpea.com/media/1863/img_2137.jpg",
+    "ingredients": ["Pankopanerad kyckling", "Sesambröd", "Picklad rödlök", "Romansallad", "Dillpickles", "Cheddar"],
+    "laktos" : true,
+    "gluten": true,
+    "lök": true,
+    "senapsfrö": true,
+    "sesam": true,
+    "chili": false,
+    "tomat": false
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Gedigen Burgare",
+    "url": "https://www.lantmannenunibake.dk/siteassets/sweden/images/03.-inspiration/recept/receptbilder-teasers/600x400/600x400_recept_burger_bun_grande_dubbel_orebro.jpg?maxwidth=600&maxheight=600",
+    "ingredients": ["Dubbla biffar", "Brioche", "Picklad rödlök", "Romansallad", "Jalapenos", "Cheddar"],
+    "kCal": 400,
+    "laktos" : true,
+    "gluten": true,
+    "lök": true,
+    "senapsfrö": false,
+    "sesam": false,
+    "chili": true,
+    "tomat": true
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Knappt En Burgare",
+    "kCal": 150,
+    "url": "https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750,f_auto/f_auto/healthiest-fast-food-burgers-phpW60uHJ",
+    "ingredients": ["Kött", "Bröd", "Ketchup"],
+    "laktos" : false,
+    "gluten": true,
+    "lök": false,
+    "senapsfrö": false,
+    "sesam": false,
+    "chili": false,
+    "tomat": true
 }]

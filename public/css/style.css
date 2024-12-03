@@ -67,7 +67,7 @@ header h1 {
     gap: 20px; 
     padding: 10px;
     background-color: black;
-    width: 100vw;
+    width: calc(100vw-50px);
     background-color: black;
     color: white !important;
     background-image: none !important;
@@ -77,7 +77,7 @@ header h1 {
 }
 
 section.kundinformation {
-    width: 100vw;
+    width: calc(100vw-50px);
     box-sizing: inherit;
     background-image: none !important;
     background-color: rgb(242, 194, 136);
